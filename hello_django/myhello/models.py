@@ -1,9 +1,0 @@
-from django.db import models # type: ignore
-from django.db import models # type: ignore
-from django.db import models # type: ignore
-class Post(models.Model):
-    title=models.CharField(max_length=100)
-    content = models.TextField(blank=True)
-    photo =models.URLField(blank=True)
-    location = models.CharField(max_length=100)
-    created_at = models.DateTimeField(auto_now_add=True)
