@@ -1,0 +1,33 @@
+"""
+URL configuration for myproject project.
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/5.1/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+#from django.urls import path # type: ignore
+#from.import views
+#urlpatterns = [
+#path('',views.myIndex,name='index'),
+#]
+from django.urls import path # type: ignore
+from . import views
+#urlpatterns = [
+    #path('',views.HelloApiView.as_view(),name='index'),
+#]
+urlpatterns = [
+    #path('add',views.add_post,name='addpost'),
+    #path('list',views.list_post,name='list_post'),
+    #path('users',views.list_users,name='list_users')
+    path('courselist/', views.course_list, name='course_list'),
+    path('addcourse/', views.add_course, name='add_course'),
+]
