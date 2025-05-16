@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 40px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  color: #333;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 0 8px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+#pageInfo {
+  font-weight: bold;
+  margin: 0 10px;
+}
